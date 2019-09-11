@@ -2,6 +2,9 @@ package com.rjgonzalez.moviesonboarding.service;
 
 import org.springframework.http.ResponseEntity;
 
+import com.rjgonzalez.moviesonboarding.dto.ActorRQDTO;
+import com.rjgonzalez.moviesonboarding.dto.ActorRSDTO;
+
 /**
  * 
  * Interface service for manage actors

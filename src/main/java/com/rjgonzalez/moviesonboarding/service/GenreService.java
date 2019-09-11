@@ -2,6 +2,9 @@ package com.rjgonzalez.moviesonboarding.service;
 
 import org.springframework.http.ResponseEntity;
 
+import com.rjgonzalez.moviesonboarding.dto.GenreRQDTO;
+import com.rjgonzalez.moviesonboarding.dto.GenreRSDTO;
+
 /**
  * 
  * Interface service for manage genres

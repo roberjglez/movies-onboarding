@@ -2,6 +2,9 @@ package com.rjgonzalez.moviesonboarding.service;
 
 import org.springframework.http.ResponseEntity;
 
+import com.rjgonzalez.moviesonboarding.dto.MovieRQDTO;
+import com.rjgonzalez.moviesonboarding.dto.MovieRSDTO;
+
 /**
  * 
  * Interface service for manage movies
