@@ -1,5 +1,7 @@
 package com.rjgonzalez.moviesonboarding.service;
 
+import java.util.List;
+
 import org.springframework.http.ResponseEntity;
 
 import com.rjgonzalez.moviesonboarding.dto.MovieRQDTO;
@@ -19,4 +21,6 @@ public interface MovieService {
 	public ResponseEntity<MovieRSDTO> deleteMovie(Long idMovie);
 
 	public ResponseEntity<MovieRSDTO> getMovie(Long idMovie);
+
+	public ResponseEntity<List<MovieRSDTO>> getAllMovies();
 }

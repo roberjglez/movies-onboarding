@@ -1,8 +1,10 @@
 package com.rjgonzalez.moviesonboarding.service.impl;
 
+import java.util.List;
 import java.util.Optional;
 
 import org.modelmapper.ModelMapper;
+import org.modelmapper.TypeToken;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -63,6 +65,17 @@ public class MovieServiceImpl implements MovieService {
 			return new ResponseEntity<>(HttpStatus.NO_CONTENT);
 		}
 
+	}
+
+	@Override
+	public ResponseEntity<List<MovieRSDTO>> getAllMovies() {
+
+		List<MovieEntity> moviesListEntity = movieRepository.findAll();
+
+		List<MovieRSDTO> moviesListDTO = modelMapper.map(moviesListEntity, new TypeToken<List<MovieRSDTO>>() {
+		}.getType());
+
+		return new ResponseEntity<>(moviesListDTO, HttpStatus.OK);
 	}
 
 }

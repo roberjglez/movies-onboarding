@@ -1,5 +1,7 @@
 package com.rjgonzalez.moviesonboarding.service;
 
+import java.util.List;
+
 import org.springframework.http.ResponseEntity;
 
 import com.rjgonzalez.moviesonboarding.dto.GenreRQDTO;
@@ -19,4 +21,6 @@ public interface GenreService {
 	public ResponseEntity<GenreRSDTO> deleteGenre(Long idGenre);
 
 	public ResponseEntity<GenreRSDTO> getGenre(Long idGenre);
+
+	public ResponseEntity<List<GenreRSDTO>> getAllGenres();
 }

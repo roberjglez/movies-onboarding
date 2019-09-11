@@ -1,5 +1,7 @@
 package com.rjgonzalez.moviesonboarding.service;
 
+import java.util.List;
+
 import org.springframework.http.ResponseEntity;
 
 import com.rjgonzalez.moviesonboarding.dto.ActorRQDTO;
@@ -19,4 +21,6 @@ public interface ActorService {
 	public ResponseEntity<ActorRSDTO> deleteActor(Long idActor);
 
 	public ResponseEntity<ActorRSDTO> getActor(Long idActor);
+
+	public ResponseEntity<List<ActorRSDTO>> getAllActors();
 }
