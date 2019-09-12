@@ -7,8 +7,6 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-import lombok.Data;
-
 /**
  * Genre Entity
  * 
@@ -16,7 +14,6 @@ import lombok.Data;
  *
  */
 @Entity
-@Data
 @Table(name = "Genres")
 public class GenreEntity {
 
@@ -27,4 +24,33 @@ public class GenreEntity {
 
 	@Column(name = "type")
 	private String type;
+
+	/**
+	 * @return the idGenre
+	 */
+	public Long getIdGenre() {
+		return idGenre;
+	}
+
+	/**
+	 * @param idGenre the idGenre to set
+	 */
+	public void setIdGenre(Long idGenre) {
+		this.idGenre = idGenre;
+	}
+
+	/**
+	 * @return the type
+	 */
+	public String getType() {
+		return type;
+	}
+
+	/**
+	 * @param type the type to set
+	 */
+	public void setType(String type) {
+		this.type = type;
+	}
+
 }
