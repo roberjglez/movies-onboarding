@@ -1,5 +1,7 @@
 package com.rjgonzalez.moviesonboarding.dto;
 
+import java.util.List;
+
 import com.fasterxml.jackson.annotation.JsonInclude;
 
 /**
@@ -16,6 +18,10 @@ public class MovieRSDTO {
 	private String title;
 
 	private String year;
+
+	private List<ActorRQDTO> actors;
+
+	private List<GenreRQDTO> genres;
 
 	/**
 	 * @return the idMovie
@@ -57,6 +63,34 @@ public class MovieRSDTO {
 	 */
 	public void setYear(String year) {
 		this.year = year;
+	}
+
+	/**
+	 * @return the actors
+	 */
+	public List<ActorRQDTO> getActors() {
+		return actors;
+	}
+
+	/**
+	 * @param actors the actors to set
+	 */
+	public void setActors(List<ActorRQDTO> actors) {
+		this.actors = actors;
+	}
+
+	/**
+	 * @return the genres
+	 */
+	public List<GenreRQDTO> getGenres() {
+		return genres;
+	}
+
+	/**
+	 * @param genres the genres to set
+	 */
+	public void setGenres(List<GenreRQDTO> genres) {
+		this.genres = genres;
 	}
 
 }
