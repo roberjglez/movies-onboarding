@@ -76,6 +76,12 @@ public class GenreController {
 
 	}
 
+	/**
+	 * Endpoint to get all genres
+	 * 
+	 * @return ResponseEntity<List<GenreRSDTO>> -> genres list and http status
+	 *
+	 */
 	@GetMapping(path = "/getAllGenres", produces = MediaType.APPLICATION_JSON_VALUE)
 	@ResponseBody
 	public ResponseEntity<List<GenreRSDTO>> getAllGenres() {

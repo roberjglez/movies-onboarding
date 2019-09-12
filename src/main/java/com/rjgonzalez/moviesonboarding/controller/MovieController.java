@@ -76,6 +76,12 @@ public class MovieController {
 
 	}
 
+	/**
+	 * Endpoint to get all movies
+	 * 
+	 * @return ResponseEntity<List<MovieRSDTO>> -> movies list and http status
+	 *
+	 */
 	@GetMapping(path = "/getAllMovies", produces = MediaType.APPLICATION_JSON_VALUE)
 	@ResponseBody
 	public ResponseEntity<List<MovieRSDTO>> getAllMovies() {

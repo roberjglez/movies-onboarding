@@ -76,6 +76,12 @@ public class ActorController {
 
 	}
 
+	/**
+	 * Endpoint to get all actors
+	 * 
+	 * @return ResponseEntity<List<ActorRSDTO>> -> actors list and http status
+	 *
+	 */
 	@GetMapping(path = "/getAllActors", produces = MediaType.APPLICATION_JSON_VALUE)
 	@ResponseBody
 	public ResponseEntity<List<ActorRSDTO>> getAllActors() {
