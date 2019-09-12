@@ -25,6 +25,12 @@ public class GenreEntity {
 	@Column(name = "type")
 	private String type;
 
+	public GenreEntity(Long idGenre, String type) {
+		super();
+		this.idGenre = idGenre;
+		this.type = type;
+	}
+
 	/**
 	 * @return the idGenre
 	 */

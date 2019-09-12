@@ -42,6 +42,15 @@ public class MovieEntity {
 	@JoinTable(name = "movies_have_genres", joinColumns = @JoinColumn(name = "id_movie", nullable = false), inverseJoinColumns = @JoinColumn(name = "id_genre", nullable = false))
 	private List<GenreEntity> genres;
 
+	public MovieEntity(Long idMovie, String title, String year, List<ActorEntity> actors, List<GenreEntity> genres) {
+		super();
+		this.idMovie = idMovie;
+		this.title = title;
+		this.year = year;
+		this.actors = actors;
+		this.genres = genres;
+	}
+
 	/**
 	 * @return the idMovie
 	 */

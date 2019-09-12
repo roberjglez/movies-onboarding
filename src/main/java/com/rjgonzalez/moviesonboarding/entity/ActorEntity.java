@@ -31,6 +31,14 @@ public class ActorEntity {
 	@Column(name = "phone_number", nullable = false)
 	private String phoneNumber;
 
+	public ActorEntity(Long idActor, String name, String surname, String phoneNumber) {
+		super();
+		this.idActor = idActor;
+		this.name = name;
+		this.surname = surname;
+		this.phoneNumber = phoneNumber;
+	}
+
 	/**
 	 * @return the idActor
 	 */
